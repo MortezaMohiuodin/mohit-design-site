@@ -2,7 +2,7 @@
   Generate banner with pure js
 */
 
-const TOTAL_WORDS = 100;
+const TOTAL_WORDS = 200;
 const words = [];
 
 // Generate 100 random uppercase dummy words

@@ -1,11 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Mohit Design</title>
+    <style>
+        #loader {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: #fccc0b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgb(252, 249, 215);
+            border-top-color: #080808;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+        to {
+            transform: rotate(360deg);
+            }
+        }
+        /* Hide loader once page is loaded */
+        body.loaded #loader {
+            display: none;
+        }
+    </style>
 </head>
 <body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <div id="app">
+        <div class="content">
+            <header>
+                <div class="headings">
+                    <div class="logotype">
+                        <h1 class="sr-only">محیط</h1>
+                        <img src="./assets/images/heading-1.svg" width="100" height="40"/>
+                    </div>
+                    <div class="caption">
+                        <h5 class="sr-only">جایی برای جمع</h5>
+                        <img src="./assets/images/heading-2.svg" width="100" height="20"/>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="/about.html">
+                                <img src="./assets/images/link-1.svg" alt="نام لینک">
+                                <span class="sr-only">نام لینک</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/about.html">
+                                <img src="./assets/images/link-2.svg" alt="نام لینک">
+                                <span class="sr-only">نام لینک</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/about.html">
+                                <img src="./assets/images/link-3.svg" alt="نام لینک">
+                                <span class="sr-only">نام لینک</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/about.html">
+                                <img src="./assets/images/link-4.svg" alt="نام لینک">
+                                <span class="sr-only">نام لینک</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="banner">
+               
+                </div>
+            </main>
+            <hr>
+            <footer>
+                <ul class="social">
+                    <li class="social-item">
+                        <a href="#">
+                            <img src="./assets/images/icon-instagram.svg"/>
+                        </a>        
+                    </li> 
+                    <li class="social-item">
+                        <a href="#">
+                            <img src="./assets/images/icon-phone.svg"/>
+                        </a>        
+                    </li> 
+                </ul>
+                <div class="footer-headings">
+                    <div class="footer-headings-left">
+                        <h3 class="sr-only">متن هدینگ</h3>
+                        <img src="./assets/images/footer-2.png" width="100" height="40"/>
+                    </div>
+                    <div class="footer-headings-right">
+                        <h3 class="sr-only">متن هدینگ</h3>
+                        <img src="./assets/images/footer-1.svg" width="100" height="40"/>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
     
+  <script src="./main.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+        setTimeout(()=>{
+            document.body.classList.add('loaded');
+        },1000)
+    });
+  </script>
 </body>
 </html>

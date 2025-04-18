@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #loader {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgb(129, 129, 129);
+            border-top-color: #080808;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+        to {
+            transform: rotate(360deg);
+            }
+        }
+        /* Hide loader once page is loaded */
+        body.loaded #loader {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Mohit Design</title>
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <div id="app">
+        <div class="content">
+            <div class="card">
+                <div class="heading">
+                    <img src="../assets/images/link/heading.svg"  alt="">
+                    <span class="sr-only">heading</span>
+                </div>
+                <div class="desc">
+                    <img src="../assets/images/link/desc.svg"  alt="">
+                    <span class="sr-only">desc</span>
+                </div>
+                <div class="logos">
+                    <img src="../assets/images/link/logos.svg"  alt="">
+                    <span class="sr-only">logos</span>
+                </div>
+                <div class="card-footer">
+                    <div class="footer-text">
+                        <img src="../assets/images/link/footer-1.svg" alt="">
+                        <span class="sr-only"footer-1></span>
+                    </div>
+                    <div class="logotype">
+                        <img src="../assets/images/link/logotype.svg" alt="">
+                        <span class="sr-only"logotype></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(()=>{
+                document.body.classList.add('loaded');
+            },600)
+        });
+      </script>
+</body>
+</html>

@@ -2,6 +2,7 @@
   Generate banner with pure js
 */
 
+/*
 const TOTAL_WORDS = 200;
 const words = [];
 
@@ -41,6 +42,8 @@ for (let i = 0; i < TOTAL_WORDS; i++) {
   const banner = document.querySelector('.banner')
   banner.appendChild(span);
 }
+
+*/
 
 /*
   End Generate banner with pure js

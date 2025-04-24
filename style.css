@@ -4,12 +4,12 @@
     --text-medium:#221f14;
     --latin-font:'latin-font', Courier, monospace;
     --main-font:sans-serif;
-    --size-logotype-w: 110px;
+    --size-logotype-w: 95px;
     --size-logotype-h: 40px;
-    --size-caption-w: 90px;
+    --size-caption-w: 80px;
     --size-caption-h: 30px;
 
-    --size-link-w : 80px;
+    --size-link-w : 75px;
     --size-link-h : 50px;
 
     --size-icon : 20px;
@@ -38,10 +38,10 @@ body {
 #app .content {
     width: 100%;
     background-color: var(--bg-color); /* optional, already inherited */
-    max-width: 750px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 40px;
+    max-width: 600px;
+    margin-top: 110px;
 }
 .sr-only {
     position: absolute;
@@ -69,8 +69,8 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 40px;
-    gap: 50px;
+    margin-top: 70px;
+    gap: 40px;
   }
   .nav-item img{
     width: var(--size-link-w);
@@ -85,11 +85,13 @@ body {
     margin-top: 10px;
     margin: 0;
     background-image: url('../assets/images/bg-banner.png'); /* Example texture */
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
     background-size: contain;
     font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .latin-font{
     font-family: var(--latin-font);
@@ -119,6 +121,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 60px;
+    margin-top: 40px;
 
   }
   .social{
@@ -153,9 +157,9 @@ body {
     100% { transform: translateY(0); }
   }
 hr{
-  border-color: var(--text-medium);
-  margin-top: 40px;
-  margin-bottom: 30px;
+  border-color: #44444463;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 
@@ -170,11 +174,11 @@ hr{
     margin-right: 20px;
   }
   .banner{
-    height: 80vh;
     padding:2px;
   }
   footer{
     flex-direction: column-reverse;
+   
   }
   .footer-headings{
     gap: 0px;
